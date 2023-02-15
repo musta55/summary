@@ -3,7 +3,7 @@ require('dotenv').config()
 // npm install oneai
 const {OneAI} = require("oneai");
 // ES6: import OneAI from "oneai";
-
+//const absApiKey = '453265e9-a392-4e2b-aacc-ecc527a3f41f';
 const oneai = new OneAI(process.env.absApiKey, {
     multilingual: true
 });
