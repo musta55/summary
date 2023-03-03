@@ -13,7 +13,13 @@ const pipeline = new oneai.Pipeline(
     oneai.skills.summarize(),
 );
 
-pipeline
-    .run(text)
-    .then((output) => console.log(output))
-    .catch((error) => console.error(error));
+ async function fucking () {
+    
+let demo = await pipeline
+.run(text)
+
+console.log("Testing  :"+ JSON.stringify(demo.summary))
+ }
+
+
+ fucking();
